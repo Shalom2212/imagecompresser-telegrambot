@@ -43,6 +43,7 @@ func main() {
 
 	bot.Debug = true
 
+	//dislpay username and authorized account
 	log.Printf("Authorized on account %s", bot.Self.UserName)
 
 	u := tgbotapi.NewUpdate(0)
