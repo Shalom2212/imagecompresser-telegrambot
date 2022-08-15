@@ -77,7 +77,7 @@ func main() {
 				Fpath := get_content(urlgetpath)
 
 				urldownload := "https://api.telegram.org/file/bot" + API_KEY + "/" + Fpath
-				downloadFromUrl(urldownload)
+				go downloadFromUrl(urldownload)
 
 				msg1 := tgbotapi.NewMessage(Cid, "Documnented Image File Received")
 				msg1.ReplyToMessageID = update.Message.MessageID
