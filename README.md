@@ -1,4 +1,4 @@
-# imagecompresser-telegrambot
+# imagecompressor-telegrambot
 
 I created this bot using Golang you can use this bot to compress image by just sending the photo as file in selecting the ratio landscape or portrait and get your compressed image.
 
