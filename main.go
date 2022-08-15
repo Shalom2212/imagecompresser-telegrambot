@@ -53,7 +53,7 @@ func main() {
 
 	for update := range updates {
 		if update.Message.Text == "/start" {
-			msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Hi!! 😁 \nWelcome to Imagecompresserbot\nSend Documented image only don't compress image while sending \nSelect your image ratio portrait or landscape \nyou will receive your compressed image \nThank you! 😄")
+			msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Hi!! 😁 \nWelcome to Imagecompressorbot\nSend Documented image only don't compress image while sending \nSelect your image ratio portrait or landscape \nyou will receive your compressed image \nThank you! 😄")
 			bot.Send(msg)
 		}
 		//Only allow documented image and text
@@ -79,7 +79,7 @@ func main() {
 				urldownload := "https://api.telegram.org/file/bot" + API_KEY + "/" + Fpath
 				downloadFromUrl(urldownload)
 
-				msg1 := tgbotapi.NewMessage(Cid, "Documnent Image Receive")
+				msg1 := tgbotapi.NewMessage(Cid, "Documnented Image File Received")
 				msg1.ReplyToMessageID = update.Message.MessageID
 				bot.Send(msg1)
 
